@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './common/styles/font.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { injectGlobal } from '@emotion/css';
+import { globalStyles } from './common/styles/globalStyles';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+injectGlobal`${globalStyles}`;
 root.render(
   <React.StrictMode>
     <App />

@@ -1,5 +1,130 @@
 .App {
-  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #2D2D2D
+}
+
+.App[data-theme="true"] {
+  background-color: #000;
+  color: #fff;
+}
+
+.App__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+
+
+.App__title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 43px;
+}
+
+
+.App__meanings-section {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  margin-top: 39px;
+}
+
+.App__meanings-section-synonyms {
+  color: #757575;
+  font-size: 20px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.App__meanings-section-synonyms-content {
+  color: #A445ED;
+  font-weight: 700;
+  margin: 0px 20px;
+}
+
+.App__title-section-title {
+  color: #2D2D2D;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.App__title-section-title[data-theme="true"] {
+  color: #fff;
+}
+
+
+.App__title-section-title-phonetics {
+  color: #A445ED;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Inter";
+}
+
+.App__title-section-title-phonetics-audio {
+  cursor: pointer;
+  display: block;
+}
+
+.App__title-section-title-phonetics-audio[data-error="true"] {
+  display: none;
+}
+
+.App__source-section {
+  display: flex;
+  align-items: center;
+}
+
+.App__source-section-title {
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-color: #757575;
+}
+
+.App__source-section-title-urls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App__source-section-title-urls-content {
+  color: #2D2D2D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin: 0px 0px 0px 20px;
+}
+
+.App__source-section-title-urls-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.App__horizontal-line {
+  background-color: #E9E9E9;
+  width: "100%";
+  height: 1px;
+  margin: 40px 0px 20px 0px;
 }
 
 .App-logo {
@@ -14,7 +139,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +157,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
