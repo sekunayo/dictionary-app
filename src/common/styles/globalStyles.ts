@@ -228,7 +228,6 @@ dd {
 }
 
 p {
-  font-family: "Plus Jakarta Sans";
   display: block;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -248,7 +247,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Plus Jakarta Sans";
 }
 
 ul,
