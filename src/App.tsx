@@ -15,7 +15,8 @@ function App() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSearchValue(value)
+    setSearchValue(value);
+    setValue("");
   }
   const handleToggle = () => {
     setToggle(!toggle)
